@@ -1,0 +1,36 @@
+import java.util. *;
+public class grades{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in); System.out.println("Enter the  marks :");
+int marks = sc.nextInt();
+char grade;
+if(marks>=85)
+grade = 'A';
+else if(marks>=75 && marks<85)
+grade = 'B';
+else if(marks>=65 && marks<75)
+grade = 'C';
+else if(marks>=40 && marks<65)
+grade = 'D';
+else
+grade='F';
+switch(grade) {
+case 'A' : 
+System.out.println("Excellent!");
+break;
+case 'B' :
+System. out.println("Very Good");
+break;
+case 'C' :
+System.out.println("Well done");
+break;
+case 'D' :
+System.out.println("You passed");
+break;
+case 'F' :
+System.out.println("Better try again");
+break;
+default :
+System.out.println("Invalid grade");} System.out.println("Your grade is " + grade);
+}
+ }
